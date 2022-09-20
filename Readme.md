@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Ящук](https://up.htmlacademy.ru/htmlcss/35/user/1716523).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктор Рыбаков` (https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
