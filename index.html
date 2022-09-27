@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
         <div class="header-logo">
             <a href="" class="header-logo-link">
                 <img src="#" alt="логотип города Седона" class="">
@@ -49,21 +49,21 @@
             </ul>
         </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index" data-test="main">
         <div class="main-logo-container">
             <img src="" alt="горный пейзаж седоны" class="main-logo-img">
             <img src="" alt="Добропожаловать в великолепную седону" class="sedona-text-logo">
         </div>
-        <div class="main-heding-container">
-            <h1 class="main-heading">
+        <div class="hero" data-test="hero">
+            <h1 class="hero-heading">
                 Седона — небольшой городок в Аризоне,
                 заслуживающий большего!
             </h1>
-            <p class="main-heading-text">
+            <p class="hero-heading-text">
                 Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
         </div>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
             <h2 class="visually-hidden">
                 Преимущества Седоны
             </h2>
@@ -108,12 +108,12 @@
                 </li>
             </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a href="catalog.html" class="searh-button">поиск гостиницы в седоне</a>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
@@ -121,9 +121,9 @@
             <button class="subscribe" type="submit">подписаться</button>
             </form>
         </section>
-      
+
     </main>
-    <footer class="contacts">
+    <footer class="contacts" data-test="footer">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="socialnetwork-links">
             <li class="socialnetwork-item">
