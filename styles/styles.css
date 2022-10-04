@@ -1,0 +1,69 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+.page-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main-logo-container {
+  background-color: #82B3D3;
+  background-image: url(/images/hero-background.jpg);
+  width: 1200px;
+  height: 485px;
+  background-repeat: no-repeat;
+
+}
+.hero-text{
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+.divider{
+  position: absolute;
+  bottom: 0;
+}
+.link{
+  color:inherit;
+  text-decoration: none;
+}
+.user-link{
+  color: #FFFFFF;
+  background-color: #756157;
+}

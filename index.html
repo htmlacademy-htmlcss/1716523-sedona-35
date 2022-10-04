@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
   </head>
 
@@ -13,36 +14,36 @@
     <header class="page-header" data-test="header">
 
       <a href="" class="header-logo-link">
-        <img src="/images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="">
+        <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="">
       </a>
 
       <nav class="header-navigation">
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a href="index.html" class="navigation-link">Главная</a>
+            <a href="index.html" class="link navigation-link">Главная</a>
           </li>
           <li class="header-navigation-item">
-            <a href="about.html" class="navigation-link">О Седоне</a>
+            <a href="about.html" class="link navigation-link">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            <a href="catalog.html" class="link navigation-link">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <nav class="header-user">
         <ul class="header-user-list">
           <li class="header-user-item">
-            <a href="search.html" class="user-link">
+            <a href="search.html" class="link user-search">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="header-user-item">
-            <a href="#" class="user-link">
+            <a href="#" class="link user-favorite">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="header-user-item">
-            <a href="#" class="user-link">Хочу сюда!</a>
+            <a href="#" class="link user-link">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -50,12 +51,10 @@
     <main class="main-index" data-test="main">
       <section class="hero" data-test="hero">
         <div class="main-logo-container">
-          <img src="images/hero-background.jpg" width="1200" height="485" alt="горный пейзаж седоны"
-            class="main-logo-img">
-          <img src="/images/welcome1.svg" width="1200" height="485" alt="Добропожаловать в великолепную седону"
-            class="sedona-text-logo">
+          <img src="/images/welcome1.svg"  alt="Welcome to the georgeous Sedona, because the Grand Canyon sucks!"
+            class="hero-text">
         </div>
-
+        <img src="/images/divider.png" class="divider" >
         <h1 class="hero-heading">
           Седона — небольшой городок в Аризоне,
           заслуживающий большего!
@@ -150,7 +149,7 @@
       <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/">
         <span class="visually-hidden"> HTML academy</span>
-        <img src="" alt="Логотип HTML academy" class="footer-logo">
+        <img src="images/HTMLAcademy-logo.png" alt="Логотип HTML academy" class="footer-logo">
       </a>
     </footer>
 
