@@ -1,40 +1,40 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2);
+  font-display: swap;
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/ptsans-400.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/ptsans-700.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url(/fonts/ptsans-400.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url(/fonts/ptsans-700.woff2);
-  font-display: swap;
 }
 
 .page-header {
@@ -46,7 +46,7 @@ body {
 .hero {
   background-color: #82B3D3;
   background-size: 100% auto;
-  background-image: url(/images/hero-background.jpg);
+  background-image: url(../images/hero-background.jpg);
 
   background-repeat: no-repeat;
 
@@ -169,7 +169,7 @@ li:nth-child(4) {
 
 .subscribe{
   background-color: #82B3D3;
-  background-image: url(/images/subscribe-background.jpg);
+  background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -209,7 +209,7 @@ li:nth-child(4) {
 .catalog-form{
   font-family: inherit;
   background-color: #82B3D3;
-  background-image: url(/images/catalog-background.jpg);
+  background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
