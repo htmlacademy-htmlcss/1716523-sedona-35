@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="header-logo">
         <a href="index.html" class="header-logo-link">
           <img src="images/header-logo.svg" alt="логотип города Седона" class="">
@@ -184,7 +184,7 @@
             <p>гостиница</p>
             <p>От 1500 р</p>
             <a href="#" class="button hotel-details-button">подробнее</a>
-            <button class="button favorite" type="button">В избранное</button>
+            <button class="button put-in-favorite" type="button">В избранное</button>
             <p><span class="visually-hidden">две звезды</span></p>
             <p><span class="raiting">Рейтинг: 5,0</span></p>
           </li>
@@ -238,8 +238,8 @@
         </li>
       </ul>
       <h2 class="phone">+7 (812) 812-12-12</h2>
-      <a href="https://htmlacademy.ru/" class="visually-hidden">
-        HTML academy
+      <a href="https://htmlacademy.ru/">
+        <span class="visually-hidden">HTML academy</span>
         <img src="images/HTMLAcademy-logo.png" alt="Логотип HTML academy" class="footer-logo">
       </a>
     </footer>

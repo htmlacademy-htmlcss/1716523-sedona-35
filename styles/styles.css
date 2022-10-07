@@ -44,11 +44,13 @@ body {
 }
 
 .hero {
+  width: 1200px;
+  height: 485px;
   background-color: #82B3D3;
   background-size: 100% auto;
   background-image: url(../images/divider.png), url(../images/hero-background.jpg);
-
   background-repeat: no-repeat;
+  background-position: bottom, center;
 
 
 }
@@ -73,17 +75,19 @@ body {
 }
 
 .hero-heading {
-  font-style: Bold;
+  font-weight:700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: bottom;
+  padding-top: 69px;
+  margin: 0;
+
 }
 
 .advantages-text {
   color: #333333;
-  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -95,25 +99,22 @@ body {
 
 .advantages-list h3 {
   text-transform: uppercase;
-  font-style: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
 .advantages-list p {
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
 }
 
-.advantages-list li:nth-child(1),
-li:nth-child(5) {
+.advantages-item {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-list li:nth-child(2),
-li:nth-child(4) {
+.advantages-list li:nth-child(2n) {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 
@@ -130,13 +131,12 @@ li:nth-child(4) {
 
 .advantages2-list h3 {
   text-transform: uppercase;
-  font-style: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
 .advantages2-list p {
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
 }
@@ -161,14 +161,13 @@ li:nth-child(4) {
 }
 
 .search h2 {
-  font-style: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .search p {
-  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -178,7 +177,7 @@ li:nth-child(4) {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
-  font-style: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
 }
@@ -199,7 +198,7 @@ li:nth-child(4) {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 36px;
   width: 232px;
   height: 52px;
@@ -213,9 +212,7 @@ li:nth-child(4) {
   padding: 0;
 }
 
-.socialnetwork-item,
-a,
-span {
+.socialnetwork-item, a{
   color: #000000;
   text-decoration: none;
   font-family: inherit;
@@ -239,6 +236,8 @@ span {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
+  min-width: 1200px;
+  min-height: 412px;
 }
 
 .form-heading {
