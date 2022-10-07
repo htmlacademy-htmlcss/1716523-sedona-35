@@ -48,7 +48,7 @@
       </nav>
     </header>
     <main class="catalog">
-      <section class="catalog-form">
+      <section class="catalog-form" data-test="filter">
         <h1 class="form-heading"> Гостиницы Седоны</h1>
         <nav class="breadcrumbs">
           <ul class="breadcrumbs-list">
@@ -120,7 +120,7 @@
           <button class="button form-button form-button-reset" type="reset">Сбросить</button>
         </form>
       </section>
-      <section class="search-result">
+      <section class="search-result" data-test="catalog">
         <header class="search-header">
           <h2>Найдено гостиниц: 38</h2>
           <input name="hotels-price" list="hotels-price" placeholder="Сначала дешёвые">
@@ -214,7 +214,7 @@
           </ul>
         </footer>
       </section>
-      <section class="subscribe subscribe-catalog">
+      <section class="subscribe subscribe-catalog" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
@@ -224,7 +224,7 @@
       </section>
 
     </main>
-    <footer class="contacts">
+    <footer class="contacts" data-test="footer">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="socialnetwork-links">
         <li class="socialnetwork-item">
