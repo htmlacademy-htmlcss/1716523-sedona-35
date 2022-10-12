@@ -13,12 +13,15 @@
   <body>
     <header class="page-header" data-test="header">
 
-      <a href="" class="header-logo-link">
-        <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="">
-      </a>
-
       <nav class="header-navigation">
         <ul class="header-navigation-list">
+          <li>
+            <div class="header-logo-link">
+              <a href="">
+                <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="header-logo">
+              </a>
+            </div>
+          </li>
           <li class="header-navigation-item">
             <a href="index.html" class="link navigation-link">Главная</a>
           </li>
@@ -51,7 +54,7 @@
     <main class="main-index" data-test="main">
       <section class="hero" data-test="hero">
 
-        <img src="/images/welcome1.svg" alt="Welcome to the georgeous Sedona, because the Grand Canyon sucks!"
+        <img src="images/welcome1.svg" alt="Welcome to the georgeous Sedona, because the Grand Canyon sucks!"
           class="hero-text">
 
         <h1 class="hero-heading">
@@ -69,28 +72,28 @@
         </p>
 
         <ul class="advantages-list">
-          <li class="advantages-item background-blue">
-            <img src="images/advantages-1.jpg" width="800" height="384" alt="фотография Седоны" class="advantages-img">
+          <li class="advantages-item background-blue img-item">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="images/advantages-1.jpg" width="800" height="384" alt="фотография Седоны" class="advantages-img">
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item no-img-item">
             <h3>Небольшая площадь</h3>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item no-img-item">
             <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item no-img-item">
             <h3>мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item background-blue">
+          <li class="advantages-item background-blue img-item">
+            <img src="images/advantages-2.jpg" width="800" height="384" alt="фотография пейзажа Седоны" class="advantages-img">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="images/advantages-2.jpg" width="800" height="384" alt="фотография пейзажа Седоны"
-              class="advantages-img">
+
           </li>
         </ul>
 
