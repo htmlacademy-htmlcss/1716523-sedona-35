@@ -11,21 +11,24 @@
 
   <body>
     <header class="page-header" data-test="header">
-      <div class="header-logo">
-        <a href="index.html" class="header-logo-link">
-          <img src="images/header-logo.svg" alt="логотип города Седона" class="">
-        </a>
-      </div>
+
       <nav class="header-navigation">
         <ul class="header-navigation-list">
-          <li class="header-navigation-item">
-            <a href="index.html" class="navigation-link">Главная</a>
+          <li>
+            <div class="header-logo-link">
+              <a href="">
+                <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="header-logo">
+              </a>
+            </div>
           </li>
           <li class="header-navigation-item">
-            <a href="about.html" class="navigation-link">О Седоне</a>
+            <a href="index.html" class="link navigation-link">Главная</a>
           </li>
           <li class="header-navigation-item">
-            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            <a href="about.html" class="link navigation-link">О Седоне</a>
+          </li>
+          <li class="header-navigation-item">
+            <a href="catalog.html" class="link navigation-link">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -231,19 +234,19 @@
     <footer class="contacts" data-test="footer">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="social-network-container">
-      <ul class="socialnetwork-links">
-        <li class="socialnetwork-item">
-          <a class="visually-hidden" href=https://vk.com/htmlacademy>Вконтакте</a>
-        </li>
-        <li class="socialnetwork-item">
-          <a class="visually-hidden" href=https://t.me/htmlacademy>Телеграмм</a>
-        </li>
-        <li class="socialnetwork-item">
-          <a class="visually-hidden" href=https://www.youtube.com/user/htmlacademyru>YouTube</a>
-        </li>
-      </ul>
-    </div>
-      <h2 class="phone">+7 (812) 812-12-12</h2>
+        <ul class="socialnetwork-links">
+          <li class="socialnetwork-item">
+            <a class="visually-hidden" href=https://vk.com/htmlacademy>Вконтакте</a>
+          </li>
+          <li class="socialnetwork-item">
+            <a class="visually-hidden" href=https://t.me/htmlacademy>Телеграмм</a>
+          </li>
+          <li class="socialnetwork-item">
+            <a class="visually-hidden" href=https://www.youtube.com/user/htmlacademyru>YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/">
         <span class="visually-hidden">HTML academy</span>
         <img src="images/HTMLAcademy-logo.png" alt="Логотип HTML academy" class="footer-logo">
