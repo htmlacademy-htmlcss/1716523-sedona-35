@@ -106,6 +106,10 @@ body {
   margin: 0;
 
 }
+.advantages{
+  margin: 0 auto;
+  outline: 1px solid red;
+}
 
 .advantages-text {
   color: #333333;
@@ -119,6 +123,8 @@ body {
   display:flex;
   flex-wrap: wrap;
   text-align: center;
+  outline: 1px solid brown;
+  padding-inline-start: 0;
 }
 .img-item{
   display: flex;
