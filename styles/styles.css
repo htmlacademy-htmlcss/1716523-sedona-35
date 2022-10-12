@@ -20,10 +20,14 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
-  min-width: 1200px;
-}
+  background-color: #f2f2f2;
 
+}
+.page-container{
+  width: 1200px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
 .header-navigation-list{
   list-style-type:none;
   width: 507px;
@@ -64,14 +68,12 @@ body {
 }
 
 .hero {
-
   background-color: #82B3D3;
   background-size: 100% auto;
   background-image: url(../images/divider.png), url(../images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-position: bottom, center;
-
-
+  background-position: bottom, top;
+  height:485px;
 }
 
 .hero-text {
