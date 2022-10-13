@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-
+html{
+  height: 100%;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -23,10 +25,16 @@ body {
   background-color: #f2f2f2;
 
 }
+.main-container{
+  flex-grow: 1;
+}
 .page-container{
   width: 1200px;
   background-color: #FFFFFF;
-  margin: 0 auto;
+  margin: 0;
+display: flex;
+flex-direction: column;
+min-height: 100%;
 }
 .header-navigation-list{
   list-style-type:none;
