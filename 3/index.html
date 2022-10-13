@@ -76,8 +76,10 @@
 
           <ul class="advantages-list">
             <li class="advantages-item background-blue img-item">
-              <h3>Настоящий городок</h3>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="advantages-item-text">
+                <h3>Настоящий городок</h3>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/advantages-1.jpg" width="800" height="384" alt="фотография Седоны"
                 class="advantages-img">
             </li>
@@ -96,9 +98,10 @@
             <li class="advantages-item background-blue img-item">
               <img src="images/advantages-2.jpg" width="800" height="384" alt="фотография пейзажа Седоны"
                 class="advantages-img">
-              <h3>Там есть мост дьявола</h3>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-
+              <div class="advantages-item-text">
+                <h3>Там есть мост дьявола</h3>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
 
@@ -121,19 +124,24 @@
         <section class="search" data-test="search">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="search-link-container">
           <a href="catalog.html" type="button" class="search-button">поиск гостиницы в седоне</a>
+        </div>
         </section>
         <section class="subscribe" data-test="subscribe">
 
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="form-container">
           <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
-            <label for="email">ваш email</label>
-            <input type="email" class="subscribe-input" placeholder="ваш email" id="email">
+            <label for="email">Ваш email</label>
+            <div class="form-container">
+            <input type="email" class="subscribe-input" placeholder="Ваш email" id="email">
 
             <button class="subscribe-button" type="submit">подписаться</button>
-
+          </div>
           </form>
+
         </section>
 
       </main>
