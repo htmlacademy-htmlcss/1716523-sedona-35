@@ -28,8 +28,6 @@ body {
   margin: 0 auto;
   min-height: 100%;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
-
-
 }
 
 
@@ -43,38 +41,51 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.header-navigation{
+  display: flex;
+}
 
 .header-navigation-list {
   list-style-type: none;
   width: 507px;
-  height: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   outline: 1px solid blue;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
-
+.header-navigation-list li{
+  margin-right: 32px;
+}
+.header-navigation-list:last-child{
+  margin-right: 0;
+}
 .header-user-list {
   list-style-type: none;
   width: 507px;
-  height: 64px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   outline: 1px solid blue;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  min-height: 64px;
 }
-
+.header-user-list li{
+  margin-right: ;
+}
 .header-logo-link {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   outline: 1px solid #756157;
-  margin-top: 10px;
+  margin-right: 44px;
 }
 
 .page-header {
-
+height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -83,9 +94,17 @@ body {
   line-height: 24px;
   margin: auto;
   outline: 1px solid blue;
-  height: 64px;
 }
-
+.user-link{
+  margin-left:20px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.button{
+  border-radius: 4px;
+}
 .hero {
   background-color: #82B3D3;
   background-size: 100% auto;
