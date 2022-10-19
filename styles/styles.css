@@ -52,10 +52,10 @@ body {
 .header-navigation-list {
   list-style-type: none;
   display: flex;
-  /* outline: 1px solid blue; */
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  min-width: 339px;
 }
 .navigation-link{
   display: block;
@@ -477,8 +477,9 @@ padding: 92px 85px 111px 85px;
 }
 .socialnetwork-links{
   display: flex;
+  margin-right: 236px;
 }
-.socialnetwork-item, a {
+.socialnetwork-item {
   color: #000000;
   text-decoration: none;
   font-family: inherit;
@@ -486,8 +487,34 @@ padding: 92px 85px 111px 85px;
   width: 40px;
   height: 47px;
 }
+.socialnetwork-item:first-child{
+  background-image: url(/images/vk-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.socialnetwork-item:nth-child(2){
+  background-image: url(/images/telegram-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.socialnetwork-item:last-child{
+  background-image: url(/images/youtube-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 70px 30px 70px;
+  outline: 1px solid orange;
+  min-width: 1060px;
+  min-height: 50px;
 
+}
 .phone {
+  display: block;
   color: #000000;
   width: 331px;
   height: 40px;
@@ -496,6 +523,7 @@ padding: 92px 85px 111px 85px;
   font-weight: 400;
   line-height: 40px;
   text-decoration: none;
+  margin-right: 42px;
 }
 
 .catalog-form {
