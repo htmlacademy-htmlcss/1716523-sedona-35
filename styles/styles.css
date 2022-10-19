@@ -380,6 +380,7 @@ padding: 92px 85px 111px 85px;
 }
 .search-link-container a{
   display: block;
+  text-decoration: none;
 }
 .subscribe {
   background-color: #82B3D3;
@@ -478,10 +479,10 @@ padding: 92px 85px 111px 85px;
 .socialnetwork-links{
   display: flex;
   margin-right: 236px;
+  list-style-type: none;
 }
-.socialnetwork-item {
+.socialnetwork-item a {
   color: #000000;
-  text-decoration: none;
   font-family: inherit;
   display: block;
   width: 40px;
