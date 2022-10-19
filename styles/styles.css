@@ -59,7 +59,7 @@ body {
 }
 .navigation-link{
   display: block;
-  padding: 20px 16px 20px 16px;
+  padding: 19px 16px 19px 16px;
 }
 
 .header-navigation-item:first-child{
@@ -79,9 +79,9 @@ body {
 
 .header-logo-link {
   display: flex;
-  flex-direction: column;
   outline: 1px solid #756157;
-  /* margin-right: 44px; */
+  margin-right: 44px;
+  margin-bottom: -9px;
 }
 
 .page-header {
@@ -110,6 +110,17 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
+}
+.user-search {
+ min-width: 44px;
+  min-height: 64px;
+  display: block;
+}
+
+.user-favorite {
+  min-width: 44px;
+ min-height: 64px;
+ display: block;
 }
 .button{
   border-radius: 4px;
