@@ -52,22 +52,16 @@ body {
 .header-navigation-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   outline: 1px solid blue;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 40px;
 }
-.header-navigation-list li{
-  padding: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+.navigation-link{
+  display: block;
+  padding: 20px 16px 20px 16px;
 }
-.header-navigation-list:last-child{
-  margin-right: 0;
-}
+
 .header-navigation-item:first-child{
   border-bottom: 2px solid #756257;
 }
