@@ -20,6 +20,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -27,7 +28,7 @@ body {
   width: 1280px;
   margin: 0 auto;
   min-height: 100%;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+
 }
 
 
@@ -40,31 +41,38 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
 }
+
 .header-navigation{
   display: flex;
+  min-height: 64px;
 }
 
 .header-navigation-list {
   list-style-type: none;
-  width: 507px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   outline: 1px solid blue;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: 40px;
 }
 .header-navigation-list li{
-  margin-right: 32px;
+  padding: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .header-navigation-list:last-child{
   margin-right: 0;
 }
+.header-navigation-item:first-child{
+  border-bottom: 2px solid #756257;
+}
 .header-user-list {
   list-style-type: none;
-  width: 507px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,14 +82,12 @@ body {
   padding: 0;
   min-height: 64px;
 }
-.header-user-list li{
-  margin-right: ;
-}
+
 .header-logo-link {
   display: flex;
   flex-direction: column;
   outline: 1px solid #756157;
-  margin-right: 44px;
+  /* margin-right: 44px; */
 }
 
 .page-header {
@@ -92,7 +98,6 @@ height: 64px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin: auto;
   outline: 1px solid blue;
 }
 .user-link{
@@ -102,27 +107,6 @@ height: 64px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.button{
-  border-radius: 4px;
-}
-.hero {
-  background-color: #82B3D3;
-  background-size: 100% auto;
-  background-image: url(../images/divider.png), url(../images/hero-background.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom, top;
-  height: 485px;
-  outline: 1px solid green;
-}
-
-.hero-text {
-  display: block;
-  margin: 0 auto;
-  padding-top: 51px;
-}
-
-
-
 .link {
   color: inherit;
   text-decoration: none;
@@ -133,6 +117,27 @@ height: 64px;
   background-color: #756157;
   text-transform: uppercase;
 }
+.button{
+  border-radius: 4px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #82B3D3;
+  background-size: 100% auto;
+  background-image: url(../images/divider.png), url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  min-height: 485px;
+  outline: 1px solid green;
+}
+
+.hero-img-text {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
 
 .hero-heading {
   font-weight: 700;
@@ -141,14 +146,18 @@ height: 64px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: bottom;
-  padding-top: 90px;
   margin: 0 auto;
   outline: 1px solid violet;
   width: 620px;
-  height: 72px;
+  min-height: 72px;
+
 }
 
 .advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   outline: 1px solid red;
 }
@@ -158,12 +167,32 @@ height: 64px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  width: 651px;
   height: 26px;
   outline: 1px solid yellowgreen;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
+.advantages-item-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+outline: 1px solid green;
+padding: 92px 85px 111px 85px;
 
+}
+.advantages-item{
+  min-height: 384px;
+
+}
+.advantages-item-text h3{
+  margin: 0;
+  width:175px;
+  margin-bottom: 62px;
+}
+.advantages-item-text p{
+  margin: 0;
+}
 .advantages-list {
   list-style-type: none;
   display: flex;
@@ -177,12 +206,12 @@ height: 64px;
 .img-item {
   display: flex;
   width: 1200px;
-  height: 384px;
+
 }
 
 .no-img-item {
   width: 400px;
-  height: 384px;
+
 }
 
 .advantages-list h3 {
@@ -217,7 +246,6 @@ height: 64px;
   list-style-type: none;
   text-align: center;
   display: flex;
-  flex-direction: row;
   margin-top: 0;
   padding-inline-start: 0;
   outline: 1px solid black;
@@ -568,4 +596,14 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
