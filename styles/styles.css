@@ -115,12 +115,34 @@ body {
  min-width: 44px;
   min-height: 64px;
   display: block;
+  background-image: url(/images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
 }
 
 .user-favorite {
   min-width: 44px;
  min-height: 64px;
  display: block;
+ background-image: url(/images/heart.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 20px;
+}
+.favorite-quantity{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  color: #FFFFFF;
+  font-size: 10px;
+  position: absolute;
+  margin: 11px 4px 33px 20px;
 }
 .button{
   border-radius: 4px;
@@ -453,11 +475,16 @@ padding: 92px 85px 111px 85px;
   opacity: 60%;
   padding: 14px 345px 14px 20px;
 }
-.socialnetwork-item,
-a {
+.socialnetwork-links{
+  display: flex;
+}
+.socialnetwork-item, a {
   color: #000000;
   text-decoration: none;
   font-family: inherit;
+  display: block;
+  width: 40px;
+  height: 47px;
 }
 
 .phone {
