@@ -30,7 +30,7 @@
               <a href="about.html" class="link navigation-link">О Седоне</a>
             </li>
             <li class="header-navigation-item">
-              <a href="catalog.html" class="link navigation-link">Гостиницы</a>
+              <a href="catalog.html" class="link navigation-link current">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -44,12 +44,14 @@
             <li class="header-user-item">
               <a href="#" class="link user-favorite">
                 <span class="visually-hidden">Избранное</span>
+                <div class="favorite-quantity">12</div>
               </a>
             </li>
             <li class="header-user-item">
-              <a href="#" class="link user-link">Хочу сюда!</a>
+              <a href="#" class="link button user-link">Хочу сюда!</a>
             </li>
           </ul>
+        </nav>
         </nav>
       </header>
       <main class="catalog main-container">
@@ -57,13 +59,18 @@
           <div class="filter-heading">
             <h1 class="form-heading"> Гостиницы Седоны</h1>
             <nav class="breadcrumbs">
+
               <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <a href="index.html">
+                  <a href="index.html" class="breadcrumbs-home-link">
                     <span class="visually-hidden">Домой</span></a>
                 </li>
+                <li>
+                  <div class="arrow-wrapper">
+                  </div>
+                </li>
                 <li class="breadcrumbs-item">
-                  <a href="catalog.html">
+                  <a href="catalog.html" class="breadcrumbs-catalog-link">
                     <span class="">Гостиницы</span></a>
                 </li>
               </ul>
@@ -71,7 +78,7 @@
           </div>
           <form action="https://echo.htmlacademy.ru/" class="options-form" method="post">
             <fieldset class="options-group">
-              <legend>Инфраструктура</legend>
+              <legend>Инфраструктура:</legend>
               <ul class="option-list">
                 <li class="options-item">
                   <label>
@@ -234,12 +241,12 @@
         <section class="subscribe-catalog" data-test="subscribe">
 
           <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <div class="form-container">
           <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
             <label for="email">Ваш email</label>
             <div class="form-container">
-            <input type="email" class="subscribe-input" placeholder="Ваш email" id="email">
+            <input type="email" class="subscribe-input"  id="email">
 
             <button class="subscribe-button" type="submit">подписаться</button>
           </div>
@@ -249,25 +256,28 @@
 
       </main>
       <footer class="contacts" data-test="footer">
+        <div class="footer-wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="social-network-container">
-          <ul class="socialnetwork-links">
-            <li class="socialnetwork-item">
-              <a class="visually-hidden" href=https://vk.com/htmlacademy>Вконтакте</a>
-            </li>
-            <li class="socialnetwork-item">
-              <a class="visually-hidden" href=https://t.me/htmlacademy>Телеграмм</a>
-            </li>
-            <li class="socialnetwork-item">
-              <a class="visually-hidden" href=https://www.youtube.com/user/htmlacademyru>YouTube</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="socialnetwork-links">
+          <li class="socialnetwork-item">
+            <a href=https://vk.com/htmlacademy>
+              <span class="visually-hidden"> Вконтакте</span></a>
+          </li>
+          <li class="socialnetwork-item">
+            <a href=https://t.me/htmlacademy>
+              <span class="visually-hidden"> Телеграмм</span></a>
+          </li>
+          <li class="socialnetwork-item">
+            <a href=https://www.youtube.com/user/htmlacademyru>
+              <span class="visually-hidden"> YouTube</span></a>
+          </li>
+        </ul>
         <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/">
-          <span class="visually-hidden">HTML academy</span>
+          <span class="visually-hidden"> HTML academy</span>
           <img src="images/HTMLAcademy-logo.png" alt="Логотип HTML academy" class="footer-logo">
         </a>
+      </div>
       </footer>
     </div>
   </body>
