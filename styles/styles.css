@@ -667,6 +667,8 @@ padding: 92px 85px 111px 85px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  border:none;
+
 }
 
 .form-button-reset {
@@ -674,6 +676,8 @@ padding: 92px 85px 111px 85px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  border: none;
+  background-color: transparent;
 }
 
 .hotel-details-button {
