@@ -652,7 +652,16 @@ padding: 92px 85px 111px 85px;
 .options-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.hotel-price{
+  border:none;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  min-height: 160px;
 }
 
 .form-buttons {
