@@ -668,6 +668,7 @@ padding: 92px 85px 111px 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 191px;
 }
 
 .form-button-submit {
@@ -677,7 +678,7 @@ padding: 92px 85px 111px 85px;
   font-weight: 700;
   line-height: 20px;
   border:none;
-
+  height: 36px;
 }
 
 .form-button-reset {
@@ -687,6 +688,7 @@ padding: 92px 85px 111px 85px;
   line-height: 20px;
   border: none;
   background-color: transparent;
+  height: 36px;
 }
 
 .hotel-details-button {
