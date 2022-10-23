@@ -120,7 +120,7 @@ body {
   min-width: 44px;
   min-height: 64px;
   display: block;
-  background-image: url(/images/search.png);
+  background-image: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -130,7 +130,7 @@ body {
   min-width: 44px;
   min-height: 64px;
   display: block;
-  background-image: url(/images/heart.png);
+  background-image: url(../images/heart.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -308,7 +308,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 384px;
-  background-image: url(/images/advantages-houses-logo.svg);
+  background-image: url(../images/advantages-houses-logo.svg);
   background-repeat: no-repeat;
   background-position: bottom 232px right 162px;
 }
@@ -318,7 +318,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 384px;
-  background-image: url(/images/advantages-souvenir-logo.svg);
+  background-image: url(../images/advantages-souvenir-logo.svg);
   background-repeat: no-repeat;
   background-position: bottom 232px right 162px;
 }
@@ -328,7 +328,7 @@ body {
   background-color: #FFFFFF;
   width: 400px;
   height: 384px;
-  background-image: url(/images/food.svg);
+  background-image: url(../images/food.svg);
   background-repeat: no-repeat;
   background-position: bottom 232px right 162px;
 }
@@ -509,19 +509,19 @@ body {
 }
 
 .socialnetwork-item:first-child {
-  background-image: url(/images/vk-logo.png);
+  background-image: url(../images/vk-logo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .socialnetwork-item:nth-child(2) {
-  background-image: url(/images/telegram-logo.png);
+  background-image: url(../images/telegram-logo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .socialnetwork-item:last-child {
-  background-image: url(/images/youtube-logo.png);
+  background-image: url(../images/youtube-logo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -597,14 +597,14 @@ body {
   display: block;
   min-width: 13px;
   min-height: 15px;
-  background-image: url(/images/home.png);
+  background-image: url(../images/home.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
 }
 
 .arrow-wrapper {
-  background-image: url(/images/breadcrumbs-arrow.png);
+  background-image: url(../images/breadcrumbs-arrow.png);
   background-repeat: no-repeat;
   background-position: center;
   min-width: 5px;
@@ -781,19 +781,19 @@ body {
 }
 
 .small-window {
-  background-image: url(/images/small-window.svg);
+  background-image: url(../images/small-window.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .large-window {
-  background-image: url(/images/large-window.svg);
+  background-image: url(../images/large-window.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .list-window {
-  background-image: url(/images/list-window.svg);
+  background-image: url(../images/list-window.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -870,7 +870,7 @@ body {
 }
 
 .four-stars {
-  background-image: url(/images/star\ 1.png);
+  background-image: url(../images/star\ 1.png);
   background-position: auto;
   background-repeat: repeat-x;
   background-size: 20px auto;
@@ -878,7 +878,7 @@ body {
 }
 
 .three-stars {
-  background-image: url(/images/star\ 1.png);
+  background-image: url(../images/star\ 1.png);
   background-position: auto;
   background-repeat: repeat-x;
   background-size: 20px auto;
@@ -886,7 +886,7 @@ body {
 }
 
 .two-stars {
-  background-image: url(/images/star\ 1.png);
+  background-image: url(../images/star\ 1.png);
   background-position: auto;
   background-repeat: repeat-x;
   background-size: 20px auto;
