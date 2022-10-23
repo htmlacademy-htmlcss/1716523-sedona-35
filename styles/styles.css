@@ -154,16 +154,19 @@ body {
 .button {
   border-radius: 4px;
 }
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  background-color: #82B3D3;
-  background-size: 100% cover;
+.wrapper{
+  background-color: #9cc4df;
+  background-size: 100%, cover;
   background-image: url(../images/divider.png), url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: bottom, top;
   min-height: 485px;
+  margin-bottom: 69px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 
 }
 
@@ -181,11 +184,10 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  vertical-align: bottom;
+  vertical-align: center;
   margin: 0 auto;
   width: 620px;
   min-height: 72px;
-  padding: 69px 290px 25px 290px;
 }
 
 .advantages {
@@ -202,8 +204,9 @@ body {
   line-height: 26px;
   text-align: center;
   height: 26px;
-  margin: 0 auto;
+  margin: 0 ;
   flex-wrap: wrap;
+  margin-bottom: 90px;
 }
 
 .advantages-item-text {
@@ -736,30 +739,36 @@ body {
 .search-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
 }
 
 .search-header h2 {
   margin: 0;
 }
-
+.search-result{
+  padding: 70px;
+}
 .search-result-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 40px;
 }
 
 .search-result-item {
-  width: 340px;
-  height: 438px;
+  min-width: 300px;
+  min-height: 438px;
   border: 1px solid #E6E6E6;
-  margin: 20px;
+  padding: 17px;
 
 }
 
@@ -796,12 +805,6 @@ body {
   background-image: url(../images/list-window.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.products-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .products-info-wrapper {
@@ -905,7 +908,6 @@ body {
 .pagination-list {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
