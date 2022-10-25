@@ -56,11 +56,15 @@ body {
   margin: 0;
   padding: 0;
   min-width: 339px;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .navigation-link {
   display: block;
-  padding: 19px 16px 19px 16px;
+  margin-right: 19px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .navigation-link.current {
@@ -565,7 +569,7 @@ body {
   background-color: #82B3D3;
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
   min-width: 1200px;
   min-height: 412px;
@@ -695,6 +699,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 .hotel-price {
