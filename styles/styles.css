@@ -87,9 +87,10 @@ body {
   display: flex;
 
   margin-right: 44px;
-  margin-bottom: -9px;
 }
-
+.header-logo-link img{
+  margin-bottom: -10px;
+}
 .page-header {
   min-height: 64px;
   display: flex;
