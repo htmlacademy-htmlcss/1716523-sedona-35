@@ -448,11 +448,17 @@ body {
   width: 475px;
   height: 53px;
 }
-
+.subscribe-catalog h2{
+  margin: 0;
+  margin-bottom: 20px;
+}
 .subscribe-catalog p {
   width: 475px;
   height: 53px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
+
 }
 
 .subscribe-button {
