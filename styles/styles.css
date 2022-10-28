@@ -44,6 +44,8 @@ body {
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
 }
 
+/* ------------HEADER START------------ */
+
 .header-navigation {
   display: flex;
   min-height: 64px;
@@ -85,9 +87,9 @@ body {
 
 .header-logo-link {
   display: flex;
-
   margin-right: 44px;
 }
+
 .header-logo-link img{
   margin-bottom: -10px;
 }
@@ -159,6 +161,9 @@ body {
 .button {
   border-radius: 4px;
 }
+/* ------------HEADER END------------ */
+
+/* ------------HERO START------------ */
 .wrapper{
   background-color: #9cc4df;
   background-size: 100%, cover;
@@ -182,7 +187,6 @@ body {
   padding-bottom: 90px;
 }
 
-
 .hero-heading {
   font-weight: 700;
   font-size: 30px;
@@ -195,6 +199,9 @@ body {
   min-height: 72px;
 }
 
+/* ------------HERO END------------ */
+
+/* ------------ADVANTAGES START------------ */
 .advantages {
   display: flex;
   flex-direction: column;
@@ -340,7 +347,9 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 232px right 162px;
 }
+/* ------------ADVANTAGES END------------ */
 
+/* ------------SEARCH START------------ */
 .search {
   text-align: center;
   height: 406px;
@@ -397,7 +406,9 @@ body {
   display: block;
   text-decoration: none;
 }
+/* ------------SEARCH END------------ */
 
+/* ------------SUBSCRIBE START------------ */
 .subscribe {
   background-color: #82B3D3;
   background-image: url(../images/subscribe-background.jpg);
@@ -508,7 +519,10 @@ body {
   opacity: 60%;
   padding: 14px 345px 14px 20px;
 }
+/* ------------SUBSCRIBE END------------ */
 
+
+/* ------------FOOTER START------------ */
 .socialnetwork-links {
   display: flex;
   list-style-type: none;
@@ -563,7 +577,9 @@ body {
   text-decoration: none;
   margin-right: 42px;
 }
+/* ------------FOOTER END------------ */
 
+/* ------------CATALOG FORM START------------ */
 .catalog-form {
   flex-wrap: wrap;
   font-family: inherit;
@@ -748,7 +764,9 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
+/* ------------CATALOG FORM END------------ */
 
+/* ------------CATALOG SEARCH RESULT START------------ */
 .search-header {
   display: flex;
   flex-direction: row;
@@ -819,6 +837,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+
 
 .products-info-wrapper {
   display: grid;
@@ -926,7 +947,9 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
+/* ------------CATALOG SEARCH RESULT END------------ */
 
+/* ------------CATALOG PAGINATION START ------------ */
 .pagination-list {
   margin: 0;
   padding: 0;
@@ -965,6 +988,8 @@ body {
 .pagination-current {
   background-color: #F2F2F2;
 }
+/* ------------CATALOG PAGINATION END ------------ */
+
 
 .current-link {
   color: #000000;
