@@ -721,7 +721,7 @@ body {
   padding-bottom: 20px;
 }
 
-.hotel-price {
+.hotels-price {
   border: none;
   margin: 0;
   padding: 0;
@@ -850,6 +850,7 @@ body {
 }
 .products-info-wrapper p{
   margin: 0;
+
 }
 .products-info-wrapper h3 {
   padding-top: 16px;
@@ -874,7 +875,9 @@ body {
   align-items: center;
   margin: 0;
 }
-
+.hotel-price{
+  justify-self: end;
+}
 .put-in-favorite {
   display: flex;
   background-color: #82B3D3;
