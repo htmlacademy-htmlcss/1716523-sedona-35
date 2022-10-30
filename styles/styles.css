@@ -59,7 +59,7 @@ body {
   padding: 0;
   min-width: 339px;
   justify-content: center;
-  /* align-items: center; */
+
 }
 
 .navigation-link {
@@ -92,6 +92,7 @@ body {
 
 .header-logo-link img{
   margin-bottom: -10px;
+  position:relative;
 }
 .page-header {
   min-height: 64px;
@@ -110,6 +111,8 @@ body {
   padding-right: 34px;
   padding-top: 8px;
   padding-bottom: 8px;
+  line-height: 20px;
+  font-size: 16px;
 }
 
 .link {
@@ -158,9 +161,6 @@ body {
   margin: 11px 4px 33px 20px;
 }
 
-.button {
-  border-radius: 4px;
-}
 /* ------------HEADER END------------ */
 
 /* ------------HERO START------------ */
@@ -1016,4 +1016,44 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.button {
+  border-radius: 4px;
+  cursor:pointer;
+}
+.button-brown:hover{
+  background-color: #615048;
+}
+.button-brown:active{
+  color: rgba(255, 255, 255, 0.3);;
+}
+.button-brown:focus-visible{
+  background-color: #615048;
+}
+.button-brown:disabled{
+  background-color: #E5E5E5
+}
+.button-blue:hover{
+  background-color: #68A2CA
+}
+.button-blue:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-blue:focus-visible{
+  background-color: #68A2CA
+}
+.button-blue:disabled{
+  background-color: #E5E5E5
+}
+.button-green:hover{
+  background-color: #6C9E42
+}
+.button-green:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-green:focus-visible{
+  background-color: #6C9E42
+}
+.button-green:disabled{
+  background-color: #E5E5E5
 }
