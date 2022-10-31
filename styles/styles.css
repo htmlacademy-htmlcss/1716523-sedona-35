@@ -763,7 +763,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
-  min-height: 160px;
+  /* min-height: 160px; */
 }
 
 .form-buttons {
@@ -815,7 +815,9 @@ body {
   margin: 0;
 }
 .search-result{
-  padding: 70px;
+  padding: 0;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .search-result-list {
   list-style-type: none;
