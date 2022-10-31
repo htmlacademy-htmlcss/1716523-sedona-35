@@ -14,23 +14,20 @@
       <header class="page-header" data-test="header">
 
         <nav class="header-navigation">
+          <div class="header-logo-link">
+            <a href="">
+              <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70" class="header-logo">
+            </a>
+          </div>
           <ul class="header-navigation-list">
-            <li>
-              <div class="header-logo-link">
-                <a href="">
-                  <img src="images/header-logo.svg" alt="логотип города Седона" width="140" height="70"
-                    class="header-logo">
-                </a>
-              </div>
-            </li>
             <li class="header-navigation-item">
-              <a href="index.html" class="link navigation-link">Главная</a>
+              <a href="index.html" class="link navigation-link current">Главная</a>
             </li>
             <li class="header-navigation-item">
               <a href="about.html" class="link navigation-link">О Седоне</a>
             </li>
             <li class="header-navigation-item">
-              <a href="catalog.html" class="link navigation-link current">Гостиницы</a>
+              <a href="catalog.html" class="link navigation-link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -38,11 +35,17 @@
           <ul class="header-user-list">
             <li class="header-user-item">
               <a href="search.html" class="link user-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" viewBox="0 0 19 19">
+                  <path class="search-svg" fill="#000" d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/>
+                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="header-user-item">
               <a href="#" class="link user-favorite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17">
+                  <path class="favorite-svg" fill="#000" d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
                 <span class="visually-hidden">Избранное</span>
                 <div class="favorite-quantity">12</div>
               </a>
@@ -51,7 +54,6 @@
               <a href="#" class="link button user-link button-brown">Хочу сюда!</a>
             </li>
           </ul>
-        </nav>
         </nav>
       </header>
       <main class="catalog main-container">
@@ -141,12 +143,17 @@
         <section class="search-result" data-test="catalog">
           <header class="search-header">
             <h2>Найдено гостиниц: 38</h2>
-            <input name="hotels-price" list="hotels-price" placeholder="Сначала дешёвые">
+            <select class="hotels-select">
+              <option value="1">сначала дешёвые</option>
+              <option value="2">сначала дорогие</option>
+              <option value="3">со скидками</option>
+            </select>
+            <!-- <input name="hotels-price" list="hotels-price" placeholder="Сначала дешёвые">
             <datalist id="hotels-price" class="hotels-price">
               <option value="сначала дешёвые">
               <option value="сначала дорогие">
               <option value="со скидками">
-            </datalist>
+            </datalist> -->
             <ul class="view-buttons">
               <li class="view-buttons-item">
                 <button class="view-type current small-window" type="button">
@@ -233,19 +240,19 @@
               <li class="pagination-item pagination-current">
                 <a class="pagination-link current-link">1</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item pagination-not-current">
                 <a class="pagination-link" href="#">2</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item pagination-not-current">
                 <a class="pagination-link" href="#">3</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item pagination-not-current">
                 <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item pagination-dotes">
                 <span>...</span>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item pagination-not-current">
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
