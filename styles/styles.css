@@ -550,28 +550,21 @@ body {
   color: #000000;
   font-family: inherit;
   display: block;
-  width: 40px;
-  height: 47px;
+}
+.socialnetwork-item a svg{
+ margin-left: 27px;
+ padding-top: 10px;
+}
+.socialnetwork-item-svg:hover{
+  fill: #68A2CA;
 }
 
-.socialnetwork-item:first-child {
-  background-image: url(../images/vk-logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.socialnetwork-item-svg:active{
+  fill: rgba(104, 162, 202, 0.3);
 }
-
-.socialnetwork-item:nth-child(2) {
-  background-image: url(../images/telegram-logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.socialnetwork-item-svg:focus-visible{
+  fill: #68A2CA;
 }
-
-.socialnetwork-item:last-child {
-  background-image: url(../images/youtube-logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .footer-wrapper {
   display: flex;
   align-items: center;
@@ -581,6 +574,17 @@ body {
   min-height: 120px;
 
 }
+
+.footer-logo:hover .footer-logo-svg{
+  fill:#756157;
+}
+.footer-logo:active .footer-logo-svg{
+  fill:rgba(117, 97, 87, 0.3);
+}
+.footer-logo:focus .footer-logo-svg{
+  fill:#756157;
+}
+
 
 .phone {
   display: block;
@@ -593,6 +597,22 @@ body {
   line-height: 40px;
   text-decoration: none;
   margin-right: 42px;
+}
+.phone:hover{
+  color:#756157;
+}
+.phone:focus-visible{
+  color:#756157;
+}
+.phone:active{
+  color: rgba(117, 97, 87, 0.3);;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 /* ------------FOOTER END------------ */
 
@@ -1015,12 +1035,7 @@ body {
   color: #000000;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+
 
 .visually-hidden {
   position: absolute;
