@@ -100,11 +100,12 @@ body {
   min-height: 64px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .user-link {
@@ -792,8 +793,10 @@ body {
 .options-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 20px;
+  margin-left: 70px;
+  margin-right:70px;
 }
 
 .hotels-price {
@@ -845,7 +848,6 @@ body {
   outline: 3px solid #83B3D3;
 }
 .hotel-details-button {
-  background-color: #756157;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
@@ -1091,7 +1093,6 @@ body {
 }
 .put-in-favorite {
   display: flex;
-  background-color: #82B3D3;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 16px;
@@ -1109,7 +1110,7 @@ body {
 .in-favorite {
   display: flex;
   border: none;
-  background-color: #7DB54F;
+
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
@@ -1255,6 +1256,15 @@ body {
   border-radius: 4px;
   cursor:pointer;
   font-family: inherit;
+}
+.button-blue{
+  background-color: #82B3D3;
+}
+.button-green{
+  background-color: #7DB54F;
+}
+.button-brown{
+  background-color: #756157;
 }
 .button-brown:hover{
   background-color: #615048;
