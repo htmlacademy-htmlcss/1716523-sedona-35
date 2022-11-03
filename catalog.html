@@ -135,12 +135,14 @@
               <legend>стоимость, р:</legend>
               <div class="range-inputs-wrapper">
               <div class="hotels-price-inputs">
-              <label>от
-                <input type="number" class="input-min-price field" name="min-price" value="0">
-              </label>
-              <label>до
-                <input type="number" class="input-max-price field" name="max-price" value="9000">
-              </label>
+                <div class="min-input-wrapper">
+              <label for="min" class="input-min-price-label" >от</label>
+                <input type="number" class="input-min-price field" name="min-price" value="0" id="min">
+              </div>
+              <div class="max-input-wrapper">
+              <label for="max" class="input-max-price-label">до</label>
+                <input type="number" class="input-max-price field" name="max-price" value="9000" id="max">
+              </div>
             </div>
             <div class="hotels-price-scale">
               <div class="hotels-price-bar" style="width: 226px; left: 0">
