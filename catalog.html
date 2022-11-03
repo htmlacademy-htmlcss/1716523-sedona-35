@@ -133,14 +133,23 @@
             </fieldset>
             <fieldset class="hotels-price">
               <legend>стоимость, р:</legend>
+              <div class="range-inputs-wrapper">
+              <div class="hotels-price-inputs">
               <label>от
-                <input type="number" class="input-min-price" name="min-price" value="0">
+                <input type="number" class="input-min-price field" name="min-price" value="0">
               </label>
               <label>до
-                <input type="number" class="input-max-price" name="max-price" value="9000">
+                <input type="number" class="input-max-price field" name="max-price" value="9000">
               </label>
-              <input type="range" class="range-price" min="0" max="12000" step="1000" value="9000" name="price">
+            </div>
+            <div class="hotels-price-scale">
+              <div class="hotels-price-bar" style="width: 226px; left: 0">
+                <button type="button" class="min-price-button range-button"></button>
+                <button type="button" class="max-price-button range-button"></button>
+              </div>
 
+            </div>
+          </div>
             </fieldset>
             <div class="form-buttons">
               <button class="button form-button form-button-submit button-blue" type="submit">Применить</button>
