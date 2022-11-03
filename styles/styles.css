@@ -1426,15 +1426,105 @@ body {
 }
 .modal-window{
   width: 717px;
-  height: 576px;
   border-radius: 30px;
   background-color: #FFFFFF;
   padding: 64px 70px 64px 70px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
 }
+.close-button{
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  top: 64px;
+  right: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  /* background-image: url(../images/close-icon.png);
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+.close-button:active .close-icon{
+  fill: rgba(117, 97, 87, 0.3)
 
+}
+.close-button:hover{
+  cursor: pointer;
+  background-color: #E6E6E6;
+}
+.close-button:focus-visible{
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  box-sizing: border-box;
+}
+.close-icon:active{
+opacity: 0,5;
+}
+.modal-window-title{
+  margin: 0;
+  margin-bottom:64px;
+}
 .field{
   padding-top:12px;
   padding-bottom: 12px;
   padding-left: 20px;
   font: inherit;
+}
+.kids-quantity{
+  padding: 14px 50px 14px 50px;
+  width: 110px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.adults-quantity{
+  padding: 14px 50px 14px 50px;
+  width: 110px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.modal-window label{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.date-input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.people-quantity-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 577px;
+  margin-bottom: 48px;
+}
+.arrival-input-wrapper{
+  display:grid;
+  grid-template-columns: 137px 440px;
+  grid-template-rows: 48px 21px;
+}
+.arrival-date-input-text{
+  grid-area: 2/2/3/3;
+}
+.departure-input-wrapper{
+  display:grid;
+  grid-template-columns: 137px 440px;
+  grid-template-rows: 48px 21px;
+}
+.date-of-departure-input-text{
+  grid-area: 2/2/3/3;
+}
+.modal-search-button{
+    border: none;
+    border-radius: 10px;
+    width: 577px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: white;
+    line-height: 24px;
+    text-transform: uppercase;
 }

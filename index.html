@@ -220,8 +220,14 @@
     </div>
     <div class="modal-window">
       <h2 class="modal-window-title">Поиск гостиницы в Седоне</h2>
-      <button class="close-button" type="button"></button>
+      <button class="close-button" type="button">
+        <span class="visually-hidden">закрыть</span>
+        <svg xmlns="http://www.w3.org/2000/svg"  width="15" height="15" fill="none" viewBox="0 0 15 15">
+          <path class="close-icon" fill="#000" d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/>
+        </svg>
+      </button>
       <form method="post" action="" class="modal-form">
+        <div class="date-input-wrapper">
         <div class="arrival-input-wrapper">
           <label for="arrival-input" class="arrival-date-label">Дата Заезда:</label>
           <input type="text" class="arrival-date-input field" id="arrival-input">
@@ -232,7 +238,8 @@
           <input type="text" class="date-of-departure-input field" id="departure-input">
           <span class="date-of-departure-input-text">На эти даты есть свободные номера. Пока есть.</span>
         </div>
-
+      </div>
+<div class="people-quantity-wrapper">
         <div class="adults-quantity-wrapper">
           <label for="adults" class="adults-label">Взрослые:</label>
           <input type="number" class="adults-quantity" id="adults">
@@ -240,13 +247,16 @@
 
         <div class="kids-quantity-wrapper">
           <label for="kids" class="kids-label">Дети:</label>
-          <div class="kids-tooltip"></div>
+
           <input type="number" id="kids" class="kids-quantity">
+          <div class="kids-tooltip"></div>
 
 
         </div>
+      </div>
+      <button class="modal-search-button button-blue button" type="submit">Найти</button>
+    </div>
 
-        <button class="modal-search-button button-blue button" type="submit">Найти</button>
       </form>
     </div>
   </body>
