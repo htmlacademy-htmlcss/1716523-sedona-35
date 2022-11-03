@@ -896,7 +896,7 @@ body {
 
 }
 .hotels-select{
-  width: 292px;
+  min-width: 292px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -904,6 +904,27 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   box-sizing: border-box;
+  padding-left: 14px;
+  padding: 13px 120px 13px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+.select-wrapper{
+  position: relative;
+}
+.select-wrapper::after{
+  z-index: 0;
+	content: " ";
+	position: absolute;
+	right: 21px;
+  bottom: 20px;
+	width: 12px;
+	height: 10px;
+	background: url(../images/arrow-for-select-svg.svg);
+	background-repeat: no-repeat;
+
 }
 .hotels-select option{
   padding-left: 20px;
