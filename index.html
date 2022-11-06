@@ -218,6 +218,7 @@
       <!-- -----FOOTER END----- -->
 
     </div>
+    <div class="modal-container modal-container-close">
     <div class="modal-window">
       <h2 class="modal-window-title">Поиск гостиницы в Седоне</h2>
       <button class="close-button" type="button">
@@ -229,36 +230,47 @@
       <form method="post" action="" class="modal-form">
         <div class="date-input-wrapper">
         <div class="arrival-input-wrapper">
-          <label for="arrival-input" class="arrival-date-label">Дата Заезда:</label>
-          <input type="text" class="arrival-date-input field" id="arrival-input">
+          <label for="arrival-input" class="arrival-date-label modal-label">Дата Заезда:</label>
+          <input type="text" class="arrival-date-input field" id="arrival-input" placeholder="27 апреля 2020">
           <span class="arrival-date-input-text">Мы не можем отправить вас в прошлое</span>
         </div>
         <div class="departure-input-wrapper">
-          <label for="departure-input" class="date-of-departure-label">Дата Выезда:</label>
-          <input type="text" class="date-of-departure-input field" id="departure-input">
+          <label for="departure-input" class="date-of-departure-label modal-label">Дата Выезда:</label>
+          <input type="text" class="date-of-departure-input field" id="departure-input" placeholder="1 сентября 2023">
           <span class="date-of-departure-input-text">На эти даты есть свободные номера. Пока есть.</span>
         </div>
       </div>
 <div class="people-quantity-wrapper">
         <div class="adults-quantity-wrapper">
-          <label for="adults" class="adults-label">Взрослые:</label>
+          <label for="adults" class="adults-label modal-label">Взрослые:</label>
+          <div class="plus-minus-container">
+            <button class="minus-button" type="button"> <span class="visually-hidden">минус</span></button>
           <input type="number" class="adults-quantity" id="adults">
+          <button class="plus-button" type="button"> <span class="visually-hidden">плюс</span></button>
+        </div>
         </div>
 
         <div class="kids-quantity-wrapper">
-          <label for="kids" class="kids-label">Дети:</label>
-
-          <input type="number" id="kids" class="kids-quantity">
+          <label for="kids" class="kids-label modal-label">Дети:</label>
           <div class="kids-tooltip"></div>
+          <div class="plus-minus-container">
+            <button class="minus-button" type="button"> <span class="visually-hidden">минус</span></button>
+          <input type="number" id="kids" class="kids-quantity">
+          <button class="plus-button" type="button"> <span class="visually-hidden">плюс</span></button>
 
+</div>
 
         </div>
       </div>
       <button class="modal-search-button button-blue button" type="submit">Найти</button>
     </div>
 
+
       </form>
+
     </div>
+
+  </div>
   </body>
 
 </html>
