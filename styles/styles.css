@@ -780,6 +780,28 @@ body {
   min-height: 110px;
   padding-top: 32px;
 }
+.options-item{
+  position: relative;
+}
+.check-mark{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+/* .checkmark-label:checked + .check-mark{
+  background-image: url(../images/check-mark-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+.checkmark-label:hover .check-mark{
+ border: 2px solid red;
+}
+.check-label{
+  padding-left: 36px;
+
+}
 
 .housing-type-list {
   list-style-type: none;
@@ -1642,7 +1664,9 @@ opacity: 0,5;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 46px;
+  outline: none;
 }
+
 .kids-label{
   margin-right: 10px;
 }
