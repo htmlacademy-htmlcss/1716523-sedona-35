@@ -795,8 +795,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 } */
-.checkmark-label:hover .check-mark{
- border: 2px solid red;
+.checkmark-label:hover {
+ opacity: 0.5;
+}
+.checkmark-label:active .check-mark:checked {
+background-image: url(../images/check-mark-icon.svg);
+background-repeat: no-repeat;
 }
 .check-label{
   padding-left: 36px;
@@ -1489,12 +1493,13 @@ body {
 }
 .close-button:active .close-icon{
   fill: rgba(117, 97, 87, 0.3)
-
 }
+
 .close-button:hover{
   cursor: pointer;
   background-color: #E6E6E6;
 }
+
 .close-button:focus-visible{
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
