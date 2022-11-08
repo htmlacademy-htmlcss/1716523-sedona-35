@@ -790,14 +790,73 @@ body {
   background-color: #FFFFFF;
   border-radius: 4px;
 }
-/* .checkmark-label:checked + .check-mark{
-  background-image: url(../images/check-mark-icon.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+
+.option[type="checkbox"]:checked + .check-mark::before{
+  position: absolute;
+  background-color: #3F5E72;
+  content: "";
+}
+.option[type="checkbox"]:checked + .check-mark::after {
+  position: absolute;
+  background-color: #3F5E72;
+  content: "";
+}
+.option[type="checkbox"]:checked + .check-mark::before {
+  transform: rotate(45deg);
+  top: 12px;
+  left: 2px;
+  width: 8px;
+  height: 2px;
+}
+
+.option[type="checkbox"]:checked + .check-mark::after {
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 6px;
+  width: 12px;
+  height: 2px;
+}
+.radio-mark{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.radio-label{
+  padding-left:36px;
+}
+.radio:hover{
+  opacity: 0.5;
+}
+.radio:focus-visible .radio-mark{
+  outline: 2px solid #82B3D3;
+}
+.radio, .radio-mark{
+  border:none;
+  outline: none;
+}
+.option-type[type="radio"]:checked + .radio-mark::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color:#3F5E72 ;
+  border-radius: 50%;
+}
+.checkmark-label{
+  border: none;
+  outline: none;
+  position:relative;
+}
 .checkmark-label:hover {
  opacity: 0.5;
 }
+.checkmark-label:focus-visible .check-mark{
+  outline: 2px solid #82B3D3;
+ }
 .checkmark-label:active .check-mark:checked {
 background-image: url(../images/check-mark-icon.svg);
 background-repeat: no-repeat;
