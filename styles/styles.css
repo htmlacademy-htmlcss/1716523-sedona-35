@@ -1002,7 +1002,8 @@ background-repeat: no-repeat;
   border: none;
 }
 .range-button:hover{
- background-color:rgba(0, 0, 0, 0.25) ;
+  border: 2px solid #83B3D3;
+ box-sizing: border-box; ;
 }
 .range-button:active{
  border: 2px solid #83B3D3;
@@ -1172,7 +1173,10 @@ background-repeat: no-repeat;
   margin: 0;
   align-self: center;
   padding: 0%;
+  border: none;
+  outline: none;
 }
+
 .small-window:hover{
   border: 2px solid black;
   border-radius: 4px;
@@ -1515,7 +1519,9 @@ background-repeat: no-repeat;
 }
 
 /* ----------MODAL-WINDOW START---------- */
-
+.modal-container-close{
+  display: none;
+}
 .modal-container{
   position: fixed;
   top:0;
