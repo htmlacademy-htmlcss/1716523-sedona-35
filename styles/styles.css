@@ -1552,9 +1552,10 @@ background-repeat: no-repeat;
   right: 52px;
   background-color: #F2F2F2;
   border: none;
-  /* background-image: url(../images/close-icon.png);
-  background-position: center;
-  background-repeat: no-repeat; */
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .close-button:active .close-icon{
   fill: rgba(117, 97, 87, 0.3)
@@ -1583,6 +1584,10 @@ opacity: 0,5;
   padding-bottom: 12px;
   padding-left: 20px;
   font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
 }
 .field:hover{
   background-color: #E6E6E6;
@@ -1595,6 +1600,12 @@ opacity: 0,5;
   border: 2px solid rgba(0, 0, 0, 1);
 
   box-sizing: border-box;
+}
+.error-input-text{
+  color: rgba(255, 87, 87, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 .kids-quantity{
   padding: 14px 10px 14px 10px;
@@ -1645,6 +1656,7 @@ opacity: 0,5;
   display:grid;
   grid-template-columns: 137px 440px;
   grid-template-rows: 48px 21px;
+  row-gap: 4px;
 }
 .arrival-date-input{
   position: relative;
@@ -1663,7 +1675,10 @@ opacity: 0,5;
   cursor: pointer;
 
 }
-
+.date-input-wrapper{
+  row-gap: 23px;
+  margin-bottom: 23px;
+}
 .arrival-date-input-text{
   grid-area: 2/2/3/3;
 }
@@ -1671,6 +1686,7 @@ opacity: 0,5;
   display:grid;
   grid-template-columns: 137px 440px;
   grid-template-rows: 48px 21px;
+  row-gap: 4px;
 }
 .date-of-departure-input-text{
   grid-area: 2/2/3/3;
@@ -1701,31 +1717,66 @@ opacity: 0,5;
   width: 40px;
   height: 48px;
   background-color: #f2f2f2;
-  background-image: url(../images/plus-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border:none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .plus-button:hover{
   cursor: pointer;
+}
+.plus-button:hover .plus-svg{
+  fill:#000000;
+  fill-opacity: 1;
 }
 .minus-button{
   width: 40px;
   height: 48px;
   background-color: #f2f2f2;
-  background-image: url(../images/minus-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border:none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus-wrapper{
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minus-wrapper{
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.minus-button:focus .minus-wrapper{
+  outline: 3px solid rgba(130, 179, 211, 1);
+}
+.plus-button:focus .plus-wrapper{
+  outline: 3px solid rgba(130, 179, 211, 1);
+}
+.minus-button:hover .minus-svg{
+  fill:#000000;
+  fill-opacity: 1;
+}
+.minus-wrapper svg{
+  vertical-align: middle;
 }
 .minus-button:hover{
   cursor: pointer;
 }
 .kids-tooltip{
+  position: relative;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1735,6 +1786,36 @@ opacity: 0,5;
   background-position: center;
   margin-right: 46px;
   outline: none;
+}
+.tooltip-hover{
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px 20px 18px 20px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+  top:46px;
+  left:-115px;
+}
+.tooltip-hover::before{
+  content: "";
+  background-color: #333333;
+  width: 19px;
+  height:19px;
+  position: absolute;
+  transform: rotate(45deg);
+  top:-9px;
+  left:119px;
+}
+.kids-tooltip:hover .tooltip-hover{
+  display: block;
 }
 
 .kids-label{
