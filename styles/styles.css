@@ -58,15 +58,22 @@ body {
   margin: 0;
   padding: 0;
   min-width: 339px;
-  justify-content: center;
 
 }
-
+.header-navigation-item-hotels {
+  margin-left:16px;
+}
+.header-navigation-item{
+  min-height: 64px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .navigation-link {
   display: block;
-  margin-right: 19px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  /* margin-right: 19px; */
+
 }
 .navigation-link:hover{
   border-bottom: 2px solid #756257;
@@ -180,7 +187,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom, top;
   min-height: 485px;
-  margin-bottom: 69px;
+  margin-bottom: 60px;
 }
 .hero {
   display: flex;
@@ -261,6 +268,11 @@ body {
   text-align: center;
   padding-inline-start: 0;
   margin-block-end: 0;
+}
+.advantages-list li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .no-img-item .advantages-item-text h3::after{
   content: "";
@@ -425,19 +437,7 @@ body {
 .search-button:hover{
   cursor: pointer;
 }
-/* .search-link-container {
-  width: 376px;
-  height: 52px;
-  background-color: #756157;
-  margin:0 auto;
-  margin-bottom: 96px;
-  border-radius: 4px;
-} */
 
-/* .search-link-container a {
-  display: block;
-  text-decoration: none;
-} */
 /* ------------SEARCH END------------ */
 
 /* ------------SUBSCRIBE START------------ */
@@ -459,14 +459,21 @@ body {
 
 .subscribe h2 {
   margin: 0;
-  padding: 96px 398px 20px 398px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 20px;
 }
 
 .subscribe p {
   text-align: center;
   margin: 0;
-  padding: 0 304px 52px 304px;
-  width: 475px;
+  font-size: 22px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 54px;
 }
 
 .subscribe-catalog {
