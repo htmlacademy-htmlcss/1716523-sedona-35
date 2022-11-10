@@ -1537,7 +1537,7 @@ background-repeat: no-repeat;
   position: fixed;
   top:0;
   left:0;
-  display: none;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1549,18 +1549,24 @@ background-repeat: no-repeat;
   /* width: 717px; */
   border-radius: 30px;
   background-color: #FFFFFF;
-  padding: 64px 70px 64px 70px;
+  padding: 67px 70px 64px 70px;
   box-sizing: border-box;
   margin: auto auto;
   position: relative;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+.modal-window h2{
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
 }
 .close-button{
   position: absolute;
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  top: 46px;
+  top: 65px;
   right: 52px;
   background-color: #F2F2F2;
   border: none;
@@ -1589,7 +1595,7 @@ opacity: 0,5;
 .modal-window-title{
   text-transform: uppercase;
   margin: 0;
-  margin-bottom:64px;
+  margin-bottom:69px;
 }
 .field{
   padding-top:12px;
@@ -1628,6 +1634,15 @@ opacity: 0,5;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  margin-left:20px;
+}
+.message-input-text{
+  margin-left:20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
 }
 .kids-quantity{
   padding: 14px 10px 14px 10px;
@@ -1685,7 +1700,7 @@ opacity: 0,5;
   opacity: 0.5;
   position: absolute;
   top: 16px;
-  right: 17px;
+  right: 22px;
 }
 .arrival-date-input{
   position: relative;
@@ -1714,7 +1729,7 @@ opacity: 0,5;
   opacity: 0.5;
   position: absolute;
   top: 16px;
-  right: 17px;
+  right: 22px;
 }
 .date-of-departure-input-text{
   grid-area: 2/2/3/3;
@@ -1829,19 +1844,19 @@ opacity: 0,5;
 }
 .tooltip-hover{
   box-sizing: border-box;
-  display: none;
+  display: block;
   position: absolute;
   width: 256px;
   height: 143px;
   background-color: #333333;
   color: #FFFFFF;
   border-radius: 10px;
-  padding: 15px 20px 18px 20px;
+  padding: 20px 20px 18px 22px;
   font-family: inherit;
   font-weight: 400;
   line-height: 20px;
   font-size: 16px;
-  top:46px;
+  top:41px;
   left:-115px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1852,7 +1867,7 @@ opacity: 0,5;
   height:19px;
   position: absolute;
   transform: rotate(45deg);
-  top:-9px;
+  top:-6px;
   left:119px;
 }
 .kids-tooltip:hover .tooltip-hover{
