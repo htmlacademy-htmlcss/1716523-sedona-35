@@ -69,17 +69,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
 }
 .navigation-link {
   display: block;
-  /* margin-right: 19px; */
+  position: relative;
+}
 
-}
-.navigation-link:hover{
-  border-bottom: 2px solid #756257;
-}
-.navigation-link.current {
-  border-bottom: 2px solid #756257;
+.current-nav-link::after {
+  content: "";
+  width:100%;
+  height: 2px;
+  background-color:rgba(117, 98, 87, 1);
+  position: absolute;
+  top: 42px;
+  left: 0;
+
 }
 
 .header-user-list {
@@ -1751,12 +1756,16 @@ opacity: 0,5;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  outline: none;
+  border: none;
 }
 .kids-quantity{
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  outline: none;
+  border: none;
 }
 .adults-quantity::-webkit-outer-spin-button,
 .adults-quantity::-webkit-inner-spin-button {
@@ -1824,9 +1833,7 @@ opacity: 0,5;
   fill:#000000;
   fill-opacity: 1;
 }
-.minus-wrapper svg{
-  vertical-align: middle;
-}
+
 .minus-button:hover{
   cursor: pointer;
 }
@@ -1844,7 +1851,7 @@ opacity: 0,5;
 }
 .tooltip-hover{
   box-sizing: border-box;
-  display: block;
+  display: none;
   position: absolute;
   width: 256px;
   height: 143px;
@@ -1869,6 +1876,7 @@ opacity: 0,5;
   transform: rotate(45deg);
   top:-6px;
   left:119px;
+
 }
 .kids-tooltip:hover .tooltip-hover{
   display: block;
