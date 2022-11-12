@@ -1848,13 +1848,19 @@ opacity: 0,5;
   background-position: center;
   margin-right: 46px;
   outline: none;
+  border:none;
+  text-align: left;
 }
+.kids-tooltip:hover{
+  cursor: pointer;
+}
+
 .tooltip-hover{
   box-sizing: border-box;
   display: none;
   position: absolute;
-  width: 256px;
-  height: 143px;
+  min-width: 256px;
+  min-height: 143px;
   background-color: #333333;
   color: #FFFFFF;
   border-radius: 10px;
@@ -1864,8 +1870,9 @@ opacity: 0,5;
   line-height: 20px;
   font-size: 16px;
   top:41px;
-  left:-115px;
+  left:50%;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
 }
 .tooltip-hover::before{
   content: "";
@@ -1873,9 +1880,9 @@ opacity: 0,5;
   width: 19px;
   height:19px;
   position: absolute;
-  transform: rotate(45deg);
+  transform: translateX(-50%) rotate(45deg) ;
   top:-6px;
-  left:119px;
+  left:50%;
 
 }
 .kids-tooltip:hover .tooltip-hover{
