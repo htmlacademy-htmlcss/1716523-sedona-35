@@ -75,7 +75,14 @@ body {
   display: block;
   position: relative;
 }
-
+.current-nav-link:focus .current-nav-link::after{
+  outline: none;
+  border:none;
+}
+.current-nav-link:focus-visible .current-nav-link::after{
+  outline: none;
+  border:none;
+}
 .current-nav-link::after {
   content: "";
   width:100%;
@@ -84,8 +91,10 @@ body {
   position: absolute;
   top: 42px;
   left: 0;
-
+  outline: none;
+  border:none;
 }
+
 
 .header-user-list {
   list-style-type: none;
@@ -189,7 +198,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom, top;
   min-height: 485px;
-  margin-bottom: 60px;
+  margin-bottom: 68px;
 }
 .hero {
   display: flex;
@@ -202,7 +211,7 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
 }
 
 .hero-heading {
