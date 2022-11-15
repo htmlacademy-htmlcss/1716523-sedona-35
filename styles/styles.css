@@ -189,8 +189,10 @@ body {
   margin: auto;
   right: 5px;
   top: 10px;
-  text-align: center;
-  vertical-align: middle;
+  line-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------HEADER END------------ */
@@ -283,7 +285,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 .no-img-item h3::after{
   content: "";
@@ -305,9 +306,9 @@ body {
 }
 
 .img-item {
-  display: flex;
+
   width: 1200px;
-  flex-wrap: wrap;
+
 
 }
 
