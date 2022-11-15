@@ -211,7 +211,7 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
-  /* padding-bottom: 90px; */
+
 }
 
 .hero-heading {
@@ -278,7 +278,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.no-img-item .advantages-item-text h3::after{
+.no-img-item h3::after{
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
@@ -287,7 +287,7 @@ body {
   top: 180px;
   left:170px;
 }
-.img-item .advantages-item-text h3::after{
+.img-item  h3::after{
   content: "";
   background-color:  rgba(255, 255, 255, 0.3);
   width: 60px;
@@ -340,6 +340,7 @@ body {
   list-style-type: none;
   text-align: center;
   display: flex;
+  flex-wrap:wrap;
   margin: 0;
   padding-inline-start: 0;
   margin-bottom: 96px;
