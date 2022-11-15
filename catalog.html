@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
     <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
   </head>
 
@@ -91,7 +90,7 @@
           </div>
           <form action="https://echo.htmlacademy.ru/" class="options-form" method="post">
             <fieldset class="options-group">
-              <legend>Инфраструктура:</legend>
+              <legend class="form-legend">Инфраструктура:</legend>
               <ul class="option-list">
                 <li class="options-item">
                   <label class="checkmark-label">
@@ -119,7 +118,7 @@
               </ul>
             </fieldset>
             <fieldset class="housing-type-group">
-              <legend>Тип Жилья</legend>
+              <legend class="form-legend">Тип Жилья</legend>
 
               <ul class="housing-type-list">
                 <li class="housing-type-item">
@@ -147,7 +146,7 @@
 
             </fieldset>
             <fieldset class="hotels-price">
-              <legend>Стоимость, &#8381:</legend>
+              <legend class="form-legend">Стоимость, &#8381;:</legend>
               <div class="range-inputs-wrapper">
                 <div class="hotels-price-inputs">
                   <div class="min-input-wrapper">
@@ -212,7 +211,7 @@
                 <div class="products-info-wrapper">
                   <h3 class="hotel-name">Amara Resort & Spa</h3>
                   <p>Гостиница</p>
-                  <p class="hotel-price">От 4000 &#8381</p>
+                  <p class="hotel-price">От 4000 &#8381;</p>
                   <a href="#" class="button hotel-details-button button-brown">подробнее</a>
                   <button class="button put-in-favorite button-blue" type="button">В избранное</button>
                   <div class="four-stars"><span class="visually-hidden">Четыре звезды</span>
@@ -227,7 +226,7 @@
                 <div class="products-info-wrapper">
                   <h3 class="hotel-name">Villas at Poco Diablo</h3>
                   <p>Гостиница</p>
-                  <p class="hotel-price">От 5000 &#8381</p>
+                  <p class="hotel-price">От 5000 &#8381;</p>
                   <a href="#" class="button hotel-details-button button-brown">подробнее</a>
                   <button class="button in-favorite button-green" type="button">В избранном</button>
                   <div class="four-stars"><span class="visually-hidden">Четыре звезды</span></div>
@@ -241,7 +240,7 @@
                 <div class="products-info-wrapper">
                   <h3 class="hotel-name">Desert Quail Inn</h3>
                   <p>Гостиница</p>
-                  <p class="hotel-price">От 2500 &#8381</p>
+                  <p class="hotel-price">От 2500 &#8381;</p>
                   <a href="#" class="button hotel-details-button button-brown">подробнее</a>
                   <button class="button put-in-favorite button-blue" type="button">В избранное</button>
                   <div class="three-stars"><span class="visually-hidden">три звезды</span></div>
@@ -255,7 +254,7 @@
                 <div class="products-info-wrapper">
                   <h3 class="hotel-name">GreenTree Inn</h3>
                   <p>Гостиница</p>
-                  <p class="hotel-price">От 1500 &#8381</p>
+                  <p class="hotel-price">От 1500 &#8381;</p>
                   <a href="#" class="button hotel-details-button button-brown">подробнее</a>
                   <button class="button put-in-favorite button-blue" type="button">В избранное</button>
                   <div class="two-stars"><span class="visually-hidden">две звезды</span></div>
@@ -352,3 +351,28 @@
   </body>
 
 </html>
+<!-- <script>
+  function getTextNodesIn(elem, opt_fnFilter) {
+  var textNodes = [];
+  if (elem) {
+    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
+      var node = nodes[i],
+        nodeType = node.nodeType;
+      if (nodeType == 3) {
+        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
+          if (node.data.trim() !== '') {
+            textNodes.push(node.data.trim() !== '' ? node : '');
+
+          }
+        }
+      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
+        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
+      }
+    }
+  }
+  return textNodes;
+}
+
+getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
+
+</script> -->
