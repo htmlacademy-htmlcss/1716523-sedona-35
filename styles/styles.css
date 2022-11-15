@@ -772,7 +772,7 @@ body {
   min-height: 157px;
   margin-right: 70px;
 }
-legend{
+.form-legend{
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
