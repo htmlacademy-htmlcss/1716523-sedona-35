@@ -86,6 +86,7 @@ body {
   display: block;
   position: relative;
 }
+
 .current-nav-link:focus .current-nav-link::after{
   outline: none;
   border:none;
@@ -663,7 +664,7 @@ body {
 .phone {
   display: block;
   color: rgb(0, 0, 0);
-  width: 331px;
+  min-width: 331px;
   min-height: 40px;
   font-family: inherit;
   font-size: 40px;
@@ -942,7 +943,7 @@ background-repeat: no-repeat;
   justify-content: flex-start;
   padding-bottom: 20px;
   margin-left: 70px;
-  margin-right:70px;
+  margin-right:65px;
   align-items: flex-start;
 }
 
@@ -998,10 +999,7 @@ background-repeat: no-repeat;
   border:none;
   box-sizing: border-box;
 }
-/* Убирает стрелочки для input type number для браузера FireFox, но это не точно */
-/* input[type='number'] {
-  -moz-appearance: textfield;
-} */
+
 
 .input-min-price::-webkit-outer-spin-button,
 .input-min-price::-webkit-inner-spin-button {
@@ -1090,6 +1088,7 @@ background-repeat: no-repeat;
   flex-direction: column;
   justify-content: flex-start;
   width: 191px;
+  margin-right: 5px;
 }
 
 .form-button-submit {
@@ -1639,11 +1638,9 @@ background-repeat: no-repeat;
   background-color: rgba(242, 242, 242, 0.8);
   flex-wrap: wrap;
 }
-/* .modal-container-close{
-  display: none;
-} */
+
 .modal-window{
-  /* width: 717px; */
+
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   padding: 67px 70px 64px 70px;
@@ -1706,6 +1703,7 @@ opacity: 0,5;
   line-height: 24px;
   color: rgb(0, 0, 0);
   outline: none;
+  -moz-appearance: textfield;
 }
 .field:hover{
   background-color: rgb(230, 230, 230);
@@ -1842,6 +1840,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
+  -moz-appearance: textfield;
 }
 .kids-quantity{
   font-family: inherit;
@@ -1850,6 +1849,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
+  -moz-appearance: textfield;
 }
 .adults-quantity::-webkit-outer-spin-button,
 .adults-quantity::-webkit-inner-spin-button {
@@ -1989,6 +1989,7 @@ opacity: 0,5;
   right: 20px;
   padding: 0;
   margin: 0;
+  background-color: inherit;
 }
 .arrival-input-wrapper svg{
   opacity: 0.5;
@@ -1997,11 +1998,4 @@ opacity: 0,5;
 .departure-input-wrapper svg{
   opacity: 0.5;
 
-}
-
-.arrival-input-wrapper:hover .date-picker-button{
-  background-color:rgb(230, 230, 230);
-}
-.departure-input-wrapper:hover .date-picker-button{
-  background-color: rgb(230, 230, 230);
 }

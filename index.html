@@ -68,7 +68,7 @@
       <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
           <div class="wrapper">
-            <img src="images/welcome1.svg" alt="Welcome to the georgeous Sedona, because the Grand Canyon sucks!"
+            <img src="images/welcome.svg" alt="Welcome to the georgeous Sedona, because the Grand Canyon sucks!"
               class="hero-img-text" width="458" height="352">
           </div>
           <h1 class="hero-heading">
@@ -92,7 +92,7 @@
                 <h3>Настоящий городок</h3>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/advantages-1.jpg" width="800" height="384" alt="фотография Седоны"
+              <img src="images/advantages-city.jpg" width="800" height="384" alt="фотография Седоны"
                 class="advantages-img">
 
             </li>
@@ -116,7 +116,7 @@
             </li>
             <li class="advantages-item background-blue img-item devils-bridge">
 
-              <img src="images/advantages-2.jpg" width="800" height="384" alt="фотография пейзажа Седоны"
+              <img src="images/advantages-bridge.jpg" width="800" height="384" alt="фотография пейзажа Седоны"
                 class="advantages-img">
               <div class="advantages-item-text ">
                 <h3>Там есть<br> мост дьявола</h3>
@@ -157,7 +157,6 @@
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <div class="form-container">
             <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
-              <!-- <label for="email">Ваш email</label> -->
               <div class="form-container">
                 <input type="email" class="subscribe-input" id="email" placeholder="Ваш e-mail">
                 <button class="subscribe-button button-blue" type="submit">подписаться</button>
@@ -335,28 +334,3 @@
   </body>
 
 </html>
-<!-- <script>
-  function getTextNodesIn(elem, opt_fnFilter) {
-  var textNodes = [];
-  if (elem) {
-    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
-      var node = nodes[i],
-        nodeType = node.nodeType;
-      if (nodeType == 3) {
-        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
-          if (node.data.trim() !== '') {
-            textNodes.push(node.data.trim() !== '' ? node : '');
-
-          }
-        }
-      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
-        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
-      }
-    }
-  }
-  return textNodes;
-}
-
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
-
-</script> -->
