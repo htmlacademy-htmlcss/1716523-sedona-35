@@ -590,14 +590,7 @@ body {
   outline: none;
 }
 
-.subscribe-form label {
-  position: absolute;
-  font-size: 18px;
-  line-height: 24px;
-  color: rgb(0, 0, 0);
-  opacity: 60%;
-  padding: 14px 345px 14px 20px;
-}
+
 /* ------------SUBSCRIBE END------------ */
 
 
