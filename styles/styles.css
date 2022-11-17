@@ -25,7 +25,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: rgb(242, 242, 242);
-  width: 1280px;
   margin: 0 auto;
   min-height: 100%;
 
@@ -49,7 +48,6 @@ body {
 .header-navigation {
   display: flex;
   min-height: 64px;
-  flex-wrap: wrap;
 }
 
 .header-navigation-list {
@@ -72,10 +70,22 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+.header-navigation-item:hover .navigation-link::after{
+  content: "";
+  width:100%;
+  height: 2px;
+  background-color:rgba(117, 98, 87, 1);
+  position: absolute;
+  top: 42px;
+  left: 0;
+  outline: none;
+  border:none;
+}
 .navigation-link {
   display: block;
   position: relative;
 }
+
 .current-nav-link:focus .current-nav-link::after{
   outline: none;
   border:none;
@@ -456,7 +466,7 @@ body {
 
 /* ------------SUBSCRIBE START------------ */
 .subscribe {
-  background-color: rgb(130, 179, 211);
+  background-color: rgb(117, 97, 87);
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   width: 1200px;
@@ -579,14 +589,7 @@ body {
   outline: none;
 }
 
-.subscribe-form label {
-  position: absolute;
-  font-size: 18px;
-  line-height: 24px;
-  color: rgb(0, 0, 0);
-  opacity: 60%;
-  padding: 14px 345px 14px 20px;
-}
+
 /* ------------SUBSCRIBE END------------ */
 
 
@@ -598,6 +601,7 @@ body {
   padding: 0;
   margin-left:70px;
   flex-wrap: wrap;
+  max-width: 200px;
 }
 .socialnetwork-item{
   display: block;
@@ -652,7 +656,7 @@ body {
 .phone {
   display: block;
   color: rgb(0, 0, 0);
-  width: 331px;
+  min-width: 331px;
   min-height: 40px;
   font-family: inherit;
   font-size: 40px;
@@ -679,7 +683,7 @@ body {
 .catalog-form {
   flex-wrap: wrap;
   font-family: inherit;
-  background-color: rgb(130, 179, 211);
+  background-color: rgb(131, 110, 100);
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -721,9 +725,6 @@ body {
   flex-wrap: wrap;
   padding: 0;
 }
-.breadcrumbs-item:last-of-type .arrow-wrapper{
-  display: none;
-}
 .breadcrumbs-home-link {
   display: block;
   min-width: 13px;
@@ -741,17 +742,28 @@ body {
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  padding-right: 28px;
+  font-size: 16px;
 }
-
-
-.arrow-wrapper {
+.breadcrumbs-item:first-child::after{
+  content: "";
   background-image: url(../images/breadcrumbs-arrow.png);
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
   width: 7px;
-  min-height: 10px;
-  margin-right: 11px;
-  margin-left: 11px;
+  height: 10px;
+  left:23px;
+}
+.breadcrumbs-item:not(:first-child):not(:last-child)::after{
+  content: "";
+  background-image: url(../images/breadcrumbs-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  left: 80px;
 }
 
 .breadcrumbs-catalog-link {
@@ -825,6 +837,7 @@ body {
 }
 .options-item{
   position: relative;
+  padding-bottom: 19px;
 }
 .check-mark{
   position: absolute;
@@ -930,7 +943,7 @@ background-repeat: no-repeat;
   justify-content: flex-start;
   padding-bottom: 20px;
   margin-left: 70px;
-  margin-right:70px;
+  margin-right:65px;
   align-items: flex-start;
 }
 
@@ -986,10 +999,7 @@ background-repeat: no-repeat;
   border:none;
   box-sizing: border-box;
 }
-/* Убирает стрелочки для input type number для браузера FireFox, но это не точно */
-/* input[type='number'] {
-  -moz-appearance: textfield;
-} */
+
 
 .input-min-price::-webkit-outer-spin-button,
 .input-min-price::-webkit-inner-spin-button {
@@ -1009,19 +1019,20 @@ background-repeat: no-repeat;
   }
   .input-max-price:focus-visible{
     background-color: rgb(230, 230, 230);
-    border: 3px solid rgb(131, 179, 211);
+    outline: 3px solid rgb(131, 179, 211);
   }
   .input-min-price:focus-visible{
     background-color: rgb(230, 230, 230);
-    border: 3px solid rgb(131, 179, 211)
+    outline: 3px solid rgb(131, 179, 211);
+
   }
   .input-max-price:active{
     background-color: rgb(230, 230, 230);
-    border: 2px solid rgb(0, 0, 0);
+    outline: 2px solid rgb(0, 0, 0);
   }
   .input-min-price:active{
     background-color: rgb(230, 230, 230);
-    border: 2px solid rgb(0, 0, 0);
+    outline: 2px solid rgb(0, 0, 0);
   }
 .min-input-wrapper{
   position: relative;
@@ -1077,6 +1088,7 @@ background-repeat: no-repeat;
   flex-direction: column;
   justify-content: flex-start;
   width: 191px;
+  margin-right: 5px;
 }
 
 .form-button-submit {
@@ -1423,7 +1435,7 @@ background-repeat: no-repeat;
 }
 
 .four-stars {
-  background-image: url(../images/star\ 1.png);
+  background-image: url(../images/star.png);
   background-position: 20px 10px;
   background-repeat: repeat-x;
   background-size: 20px auto;
@@ -1432,7 +1444,7 @@ background-repeat: no-repeat;
 
 .three-stars {
   box-sizing: border-box;
-  background-image: url(../images/star\ 1.png);
+  background-image: url(../images/star.png);
   background-position: 20px 10px;;
   background-repeat: repeat-x;
   background-size: 20px auto;
@@ -1440,7 +1452,7 @@ background-repeat: no-repeat;
 }
 
 .two-stars {
-  background-image: url(../images/star\ 1.png);
+  background-image: url(../images/star.png);
   background-position: 20px 10px;;
   background-repeat: repeat-x;
   background-size: 20px auto;
@@ -1620,17 +1632,15 @@ background-repeat: no-repeat;
   position: fixed;
   top:0;
   left:0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   flex-wrap: wrap;
 }
-/* .modal-container-close{
-  display: none;
-} */
+
 .modal-window{
-  /* width: 717px; */
+
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   padding: 67px 70px 64px 70px;
@@ -1693,6 +1703,7 @@ opacity: 0,5;
   line-height: 24px;
   color: rgb(0, 0, 0);
   outline: none;
+  appearance: textfield;
 }
 .field:hover{
   background-color: rgb(230, 230, 230);
@@ -1706,13 +1717,11 @@ opacity: 0,5;
   cursor: pointer;
 }
 .field:focus-visible{
-  border: 2px solid rgba(131, 179, 211, 1);
-  box-sizing: border-box;
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 .field:active{
-  border: 2px solid rgba(0, 0, 0, 1);
+  outline: 2px solid rgba(0, 0, 0, 1);
 
-  box-sizing: border-box;
 }
 .error-input-text{
   color: rgba(255, 87, 87, 1);
@@ -1831,6 +1840,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
+  appearance: textfield;
 }
 .kids-quantity{
   font-family: inherit;
@@ -1839,6 +1849,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
+  appearance: textfield;
 }
 .adults-quantity::-webkit-outer-spin-button,
 .adults-quantity::-webkit-inner-spin-button {
@@ -1978,6 +1989,7 @@ opacity: 0,5;
   right: 20px;
   padding: 0;
   margin: 0;
+  background-color: inherit;
 }
 .arrival-input-wrapper svg{
   opacity: 0.5;
@@ -1986,11 +1998,4 @@ opacity: 0,5;
 .departure-input-wrapper svg{
   opacity: 0.5;
 
-}
-
-.arrival-input-wrapper:hover .date-picker-button{
-  background-color:rgb(230, 230, 230);
-}
-.departure-input-wrapper:hover .date-picker-button{
-  background-color: rgb(230, 230, 230);
 }
