@@ -726,9 +726,6 @@ body {
   flex-wrap: wrap;
   padding: 0;
 }
-.breadcrumbs-item:last-of-type .arrow-wrapper{
-  display: none;
-}
 .breadcrumbs-home-link {
   display: block;
   min-width: 13px;
@@ -746,17 +743,28 @@ body {
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  padding-right: 28px;
+  font-size: 16px;
 }
-
-
-.arrow-wrapper {
+.breadcrumbs-item:first-child::after{
+  content: "";
   background-image: url(../images/breadcrumbs-arrow.png);
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
   width: 7px;
-  min-height: 10px;
-  margin-right: 11px;
-  margin-left: 11px;
+  height: 10px;
+  left:23px;
+}
+.breadcrumbs-item:not(:first-child):not(:last-child)::after{
+  content: "";
+  background-image: url(../images/breadcrumbs-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  left: 80px;
 }
 
 .breadcrumbs-catalog-link {
