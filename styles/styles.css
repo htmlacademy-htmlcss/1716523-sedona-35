@@ -25,7 +25,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: rgb(242, 242, 242);
-  width: 1280px;
   margin: 0 auto;
   min-height: 100%;
 
@@ -1704,7 +1703,7 @@ opacity: 0,5;
   line-height: 24px;
   color: rgb(0, 0, 0);
   outline: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 .field:hover{
   background-color: rgb(230, 230, 230);
@@ -1841,7 +1840,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 .kids-quantity{
   font-family: inherit;
@@ -1850,7 +1849,7 @@ opacity: 0,5;
   line-height: 20px;
   outline: none;
   border: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 .adults-quantity::-webkit-outer-spin-button,
 .adults-quantity::-webkit-inner-spin-button {
