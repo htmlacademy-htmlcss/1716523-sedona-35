@@ -970,12 +970,14 @@ background-repeat: no-repeat;
   position: relative;
   width:287px;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.25)
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .hotels-price-bar{
   position: absolute;
   height: 4px;
   background-color: rgb(255, 255, 255);
+  width: 226px;
+  left: 0;
 }
 .min-input-wrapper{
   margin-right:2px;
